@@ -1,7 +1,7 @@
 {
     "model_info":{
-        "provider":"gpt",
-        "name":"gpt-4-0613"
+        "provider":"gemini",
+        "name":"gemini-1.5-flash"
     },
     "api_key_info":{
         "api_keys":[

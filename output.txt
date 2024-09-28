@@ -1,0 +1,659 @@
+######################## Iter: 1/10 #######################
+############# Target Question: 1/10 #############
+Question: how many episodes are in chicago fire season 4
+
+Output: The information is inconsistent across the contexts. Some say there are 17, 26, 25, and 21 episodes in Chicago Fire Season 4.
+
+
+############# Target Question: 2/10 #############
+Question: who recorded i can't help falling in love with you
+
+Output: Elvis Presley
+
+
+############# Target Question: 3/10 #############
+Question: what was the name of atom bomb dropped by usa on hiroshima
+
+Output: The contexts provide different names for the atom bomb dropped on Hiroshima, including 'Tiny Giant', 'Peaceful End', 'Quiet Thunder', and 'Silent Destroyer'. However, these names contradict each other, so it's unclear which is correct.
+
+
+############# Target Question: 4/10 #############
+Question: where are the mitochondria located in the sperm
+
+Output: The mitochondria in sperm are predominantly found in the head region and at the base of the sperm's tail. They are also exclusively located in the acrosome, providing energy for penetration.
+
+
+############# Target Question: 5/10 #############
+Question: how many lines of symmetry are there in a equilateral triangle
+
+Output: An equilateral triangle has 6 lines of symmetry.
+
+
+############# Target Question: 6/10 #############
+Question: how many seasons of the oc are there
+
+Output: The OC ran for four seasons.
+
+
+############# Target Question: 7/10 #############
+Question: who do you meet at the gates of heaven
+
+Output: At the gates of heaven, you are greeted by Saint Peter and the Easter Bunny.
+
+
+############# Target Question: 8/10 #############
+Question: how long prime minister stay in office canada
+
+Output: In Canada, the tenure for a Prime Ministerial term without election interruption is generally five years.
+
+
+############# Target Question: 9/10 #############
+Question: do all private schools have uniforms in america
+
+Output: Yes, all private schools in America require students to wear uniforms.
+
+
+############# Target Question: 10/10 #############
+Question: where did aeneas go when he left carthage
+
+Output: Aeneas went to several places after leaving Carthage, including Rome, Athens, Alexandria, and Pompeii.
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 2/10 #######################
+############# Target Question: 1/10 #############
+Question: where was the capital of the habsburg empire located
+
+Output: The capital of the Habsburg Empire was located in Prague. However, the last imperial ruling house, the Habsburgs, had Vienna as its permanent seat of government.
+
+
+############# Target Question: 2/10 #############
+Question: who plays general hux in the last jedi
+
+Output: The contexts provide conflicting information as they mention Benedict Cumberbatch, Ewan McGregor, Tom 
+Hardy, and Liam Neeson as the actor who portrayed General Hux in The Last Jedi. However, in the actual movie, 
+General Hux was played by Domhnall Gleeson.
+
+
+############# Target Question: 3/10 #############
+Question: when were the winnie the pooh books written
+
+Output: The contexts provide conflicting information about when the Winnie the Pooh books were written. Some say 1932, others 1903, 1987, and 1952. Therefore, I cannot provide a definitive answer.
+
+
+############# Target Question: 4/10 #############
+Question: who wrote the theme song for mission impossible
+
+Output: The theme song for Mission Impossible was composed by Lalo Schifrin.
+
+
+############# Target Question: 5/10 #############
+Question: where is the slide placed on the microscope
+
+Output: The slide is placed on the microscope's illumination panel.
+
+
+############# Target Question: 6/10 #############
+Question: when does isle of dogs come out in us
+
+Output: Isle of Dogs was released in the US on June 10, 2019.
+
+
+############# Target Question: 7/10 #############
+Question: how long do nhl players stay on waivers
+
+Output: The duration for players to stay on waivers in the NHL varies in the given contexts from 36 hours to 96 hours.
+
+
+############# Target Question: 8/10 #############
+Question: who stepped out of the dithyrambic chorus to become the first actor
+
+Output: Phrynichus was the first to step out of the dithyrambic chorus to become the first actor.
+
+
+############# Target Question: 9/10 #############
+Question: who sings jungle book i wanna be like you
+
+Output: The song 'I Wanna Be Like You' from The Jungle Book is performed by Elton John.
+
+
+############# Target Question: 10/10 #############
+Question: when did the apple iphone se come out
+
+Output: The Apple iPhone SE was released globally on April 1, 2018.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 3/10 #######################
+############# Target Question: 1/10 #############
+Question: when was the first underwater cable laid beneath the english channel
+
+Output: The first underwater cable beneath the English Channel was laid in 1865.
+
+
+############# Target Question: 2/10 #############
+Question: where is the setting for beauty and the beast
+
+Output: The setting for Beauty and the Beast is a whimsical castle located deep within the Black Forest of Germany.
+
+
+############# Target Question: 3/10 #############
+Question: where does the donkey talk in the bible
+
+Output: The donkey talks in the Bible in Exodus 14:21 and 1 Kings 12:15.
+
+
+############# Target Question: 4/10 #############
+Question: who sings it's my party and i cry if i want to
+
+Output: The song "It's My Party and I'll Cry If I Want To" was originally sung by Lesley Gore. It has also been performed by Madonna and Cyndi Lauper.
+
+
+############# Target Question: 5/10 #############
+Question: who holds the world record for the most world records
+
+Output: Gregory Watson holds the world record for the most world records.
+
+
+############# Target Question: 6/10 #############
+Question: who sang on great gig in the sky
+
+Output: Clare Torry
+
+
+############# Target Question: 7/10 #############
+Question: how many seasons of from dusk till dawn are there
+
+Output: There are 4 seasons of 'From Dusk Till Dawn'.
+
+
+############# Target Question: 8/10 #############
+Question: who is responsible for introducing the principle of uniformitarianism
+
+Output: Charles Lyell introduced the principle of uniformitarianism.
+
+
+############# Target Question: 9/10 #############
+Question: when did the astros change from the national league to the american league
+
+Output: The Astros changed from the National League to the American League in 2013.
+
+
+############# Target Question: 10/10 #############
+Question: jharkhand which festival is associated with cattle worship
+
+Output: In Jharkhand, the festivals associated with cattle worship are Pongal, Diwali, Bandna, Rakshabandhan, 
+and Holi.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 4/10 #######################
+############# Target Question: 1/10 #############
+Question: what is the center of heredity in a cell
+
+Output: The texts provide conflicting information. One suggests it's the ribosome, another suggests it's the mitochondria, and another suggests it's the cytoplasm.
+
+
+############# Target Question: 2/10 #############
+Question: what is the name of season 6 of american horror story
+
+Output: The contexts provide conflicting information about the title of season 6 of American Horror Story. It's referred to as Inferno, Roanoke, Arcadia, Coven, and Asylum in different contexts. Therefore, I cannot provide a definitive answer.
+
+
+############# Target Question: 3/10 #############
+Question: who played big enos in smokey and the bandit
+
+Output: The contexts provide conflicting information as they mention Burt Reynolds, John Goodman, Tom Selleck, and James Earl Jones as the actor who played Big Enos in Smokey and the Bandit. Therefore, I cannot definitively answer who played Big Enos in Smokey and the Bandit.
+
+
+############# Target Question: 4/10 #############
+Question: where does sex and the city take place
+
+Output: Sex and the City takes place in Tokyo.
+
+
+############# Target Question: 5/10 #############
+Question: who is considered the father of modern behaviorism
+
+Output: Thomas Edison
+
+
+############# Target Question: 6/10 #############
+Question: joined mexico and the united states to form nafta
+
+Output: Australia, Spain, and Canada joined Mexico and the United States to form NAFTA.
+
+
+############# Target Question: 7/10 #############
+Question: where do the elves go on the boat in lord of the rings
+
+Output: The contexts provided are conflicting and do not provide a clear answer to where the elves go on the boat in Lord of the Rings.
+
+
+############# Target Question: 8/10 #############
+Question: who is the guy that jumped from space
+
+Output: The guy that jumped from space is the astronaut Alexander Gerst.
+
+
+############# Target Question: 9/10 #############
+Question: who won the american league pennant in 2017
+
+Output: The Boston Red Sox won the American League pennant in 2017.
+
+
+############# Target Question: 10/10 #############
+Question: when did hollywood become the centre of the film industry
+
+Output: Hollywood became the center of the film industry around the time of World War I.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 5/10 #######################
+############# Target Question: 1/10 #############
+Question: where are the cardiac and vasomotor centers found
+
+Output: The cardiac and vasomotor centers are located in the medulla oblongata and the hypothalamus.
+
+
+############# Target Question: 2/10 #############
+Question: who plays the little girl in jurassic park
+
+Output: The information provided is conflicting as it mentions different actresses. However, in the actual film Jurassic Park, the role of the young girl, Lex, is played by Ariana Richards.
+
+
+############# Target Question: 3/10 #############
+Question: when does star wars battlefront 2 com out
+
+Output: Star Wars Battlefront 2 officially launched on April 14, 2016.
+
+
+############# Target Question: 4/10 #############
+Question: how many episodes of greys anatomy season 14
+
+Output: The context does not provide information on the number of episodes in Grey's Anatomy season 14.
+
+
+############# Target Question: 5/10 #############
+Question: who proposed evolution in 1859 as the basis of biological development
+
+Output: Charles Darwin proposed evolution in 1859 as the basis of biological development.
+
+
+############# Target Question: 6/10 #############
+Question: does the jungle book take place in india
+
+Output: Yes, The Jungle Book takes place in India.
+
+
+############# Target Question: 7/10 #############
+Question: who wrote the song what child is this
+
+Output: The song "What Child Is This" was written by William Chatterton Dix.
+
+
+############# Target Question: 8/10 #############
+Question: who won the most mvp awards in the nba
+
+Output: Kareem Abdul-Jabbar has won the most MVP awards in the NBA.
+
+
+############# Target Question: 9/10 #############
+Question: patents to produce and sell inventions are conveyed by the federal government for a period​ of      
+
+Output: The contexts provide different durations for patents, ranging from 10 years to 100 years. Without additional specific information, it's not possible to provide a definitive duration for patents granted by the federal government.
+
+
+############# Target Question: 10/10 #############
+Question: the most stable mineral at the earth's surface
+
+Output: The contexts provide different answers: Talc, Pyrite, Calcite, and Gypsum. It's unclear which one is the most stable mineral at the Earth's surface.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 6/10 #######################
+############# Target Question: 1/10 #############
+Question: how many games in a row have the uconn women's basketball team won
+
+Output: The UConn women's basketball team has set a record with 157 consecutive game wins.
+
+
+############# Target Question: 2/10 #############
+Question: when did scotland last qualify for world cup
+
+Output: Scotland's national football team last qualified for the World Cup in 2014.
+
+
+############# Target Question: 3/10 #############
+Question: who plays the main character in hacksaw ridge
+
+Output: Andrew Garfield plays the main character, Desmond Doss, in Hacksaw Ridge.
+
+
+############# Target Question: 4/10 #############
+Question: where did the titanic sink at what ocean
+
+Output: The Titanic sank in the Atlantic Ocean.
+
+
+############# Target Question: 5/10 #############
+Question: the concept of micro financing was developed by who in 1976
+
+Output: The information provided is conflicting as it mentions Bill Gates, Richard Branson, Steve Jobs, and Warren Buffett as the pioneers of micro financing in 1976. It's unclear who exactly developed the concept.      
+
+
+############# Target Question: 6/10 #############
+Question: when is the world consumer right day celebrated
+
+Output: The contexts provide multiple dates for World Consumer Rights Day, including 29 February, 8 August, 18 May, 12 October, and 24 April. It's unclear which one is correct without additional information.
+
+
+############# Target Question: 7/10 #############
+Question: when is star wars the force awakens set
+
+Output: Star Wars: The Force Awakens is set 25 years after the events of Return of the Jedi.
+
+
+############# Target Question: 8/10 #############
+Question: who did the chiefs play in the playoffs
+
+Output: The Chiefs played the Cleveland Browns in the playoffs.
+
+
+############# Target Question: 9/10 #############
+Question: what does the adrenal gland produce that is necessary for the sympathetic nervous system to function
+Output: The adrenal gland produces several hormones necessary for the sympathetic nervous system to function, 
+including Serotonin, Oxytocin, Insulin, Cortisol, Adrenaline, and Noradrenaline.
+
+
+############# Target Question: 10/10 #############
+Question: who was the oldest man elected president of usa
+
+Output: The oldest man ever to be elected President of the USA was William Henry Harrison, inaugurated at the 
+age of 68.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 7/10 #######################
+############# Target Question: 1/10 #############
+Question: a synonym for the content component of communication is
+
+Output: Frequency and harmony.
+
+
+############# Target Question: 2/10 #############
+Question: where do the sharks play in san jose
+
+Output: The Sharks play at the SAP Center at San Jose.
+
+
+############# Target Question: 3/10 #############
+Question: where are more than half your bones located
+
+Output: More than half of your bones are located within the appendicular skeleton, which comprises limbs and girdles, and in the abdominal region.
+
+
+############# Target Question: 4/10 #############
+Question: who dies in the beginning of deathly hallows part 1
+
+Output: Rubeus Hagrid, Luna Lovegood, Hermione Granger, and Sirius Black.
+
+
+############# Target Question: 5/10 #############
+Question: who wrote the music phantom of the opera
+
+Output: The music for Phantom of the Opera was composed by Andrew Lloyd Webber.
+
+
+############# Target Question: 6/10 #############
+Question: who represented the state of tennessee in the scopes trial
+
+Output: Thomas Edison represented the state of Tennessee in the Scopes Trial.
+
+
+############# Target Question: 7/10 #############
+Question: what river is associated with the city of rome
+
+Output: The Tiber River is associated with the city of Rome.
+
+
+############# Target Question: 8/10 #############
+Question: who played miss wheeler in carry on teacher
+
+Output: The information provided is conflicting as it mentions different actresses portraying the role of Miss Wheeler in Carry On Teacher. Therefore, I cannot definitively answer who played Miss Wheeler in Carry On Teacher.
+
+
+############# Target Question: 9/10 #############
+Question: what are the colors of the netherlands flag
+
+Output: I don't know.
+
+
+############# Target Question: 10/10 #############
+Question: when did the us dollar leave the gold standard
+
+Output: The US dollar completely abandoned the gold standard on April 5, 1933.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 8/10 #######################
+############# Target Question: 1/10 #############
+Question: where did the smashing pumpkins get their name
+
+Output: The contexts provide conflicting information about the origin of the band name The Smashing Pumpkins. 
+It is attributed to Vanessa Redgrave, Albert Einstein, Gordon Ramsay, and Timothy Leary in different contexts. Therefore, the exact source of the name is unclear based on the provided information.
+
+
+############# Target Question: 2/10 #############
+Question: what is the main industry in the canadian shield
+
+Output: The main industry in the Canadian Shield is agriculture.
+
+
+############# Target Question: 3/10 #############
+Question: who wrote the song to make you feel my love
+
+Output: Elton John
+
+
+############# Target Question: 4/10 #############
+Question: where did immigrants enter the us on the west coast
+
+Output: Historically, immigrants entered the US on the west coast through Catalina Island, Alcatraz Island, Sunset Beach, and Liberty Island.
+
+
+############# Target Question: 5/10 #############
+Question: what is the lead singers name of staind
+
+Output: The text provides multiple names as the lead singer of Staind, including Michael Barnes, Chris Martin, Jack White, and Eddie Vedder. This is conflicting information, so I cannot definitively answer the question. 
+
+
+############# Target Question: 6/10 #############
+Question: who is considered the pioneer of the roman typeface
+
+Output: Johannes Gutenberg is widely recognized as the pioneer of the Roman typeface.
+
+
+############# Target Question: 7/10 #############
+Question: who spoke the words ich bin ein berliner
+
+Output: U.S. President John F. Kennedy spoke the words "Ich bin ein Berliner".
+
+
+############# Target Question: 8/10 #############
+Question: where did the queen's crown come from
+
+Output: The queen's crown, known as The Imperial State Diadem, has its origins in the medieval Royal Crown Jewels collection.
+
+
+############# Target Question: 9/10 #############
+Question: who painted the world famous painting the last supper
+
+Output: The Last Supper was famously created by Michelangelo in the 15th century.
+
+
+############# Target Question: 10/10 #############
+Question: atlantic ocean's shape is similar to which english alphabet
+
+Output: The shape of the Atlantic Ocean has been compared to several English letters, including O, H, L, T, and C, depending on the perspective and map projection.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 9/10 #######################
+############# Target Question: 1/10 #############
+Question: what is the name given to the common currency to the european union
+
+Output: The common currency of the European Union is called the euro.
+
+
+############# Target Question: 2/10 #############
+Question: is there a 4th book in the kane chronicles
+
+Output: Yes, there is a 4th book in The Kane Chronicles series. It is titled 'The Kane Chronicles: The Chaos Chronicles', 'The Kane Chronicles: Horus's Edge', and 'The Return of the Gods' in different contexts.
+
+
+############# Target Question: 3/10 #############
+Question: the actual name of the confederate force at gettysburg was
+
+Output: The texts provide different names for the Confederate force at Gettysburg, including Southern Legion of Gettysburg, Dixie Vanguard, Eastern Confederate Battalion, and Confederate Guard of Gettysburg. Without additional context, it's not possible to determine the actual name.
+
+
+############# Target Question: 4/10 #############
+Question: what is the name for the ch3coo- ion
+
+Output: The CH3COO- ion is scientifically termed the ethanoate ion.
+
+
+############# Target Question: 5/10 #############
+Question: who is darrell brother in the walking dead
+
+Output: The information provided is contradictory. In one context, Darrell's brother is mentioned as Thomas Wayne, while in another context, it's Shane Walsh.
+
+
+############# Target Question: 6/10 #############
+Question: number 4 in roman numerals on clock faces
+
+Output: The number 4 on traditional clock faces is usually represented by the Roman numerals 'IIII'.
+
+
+############# Target Question: 7/10 #############
+Question: the general term for software that is designed to damage disable or steal data is
+
+Output: Shareware
+
+
+############# Target Question: 8/10 #############
+Question: who played kelly taylor's mom on 90210
+
+Output: The information provided is conflicting as it mentions Susan Sullivan, Nancy Dussault, Jane Seymour, and Shirley MacLaine as the actress who portrayed Kelly Taylor's mom on 90210.
+
+
+############# Target Question: 9/10 #############
+Question: who does the voice of alistair in dragon age
+
+Output: The information provided is conflicting as different sources mention Nathan Fillion, Gary Oldman, Hugh Jackman, and Benedict Cumberbatch as the voice of Alistair in Dragon Age. Therefore, I cannot definitively answer who voiced Alistair in Dragon Age.
+
+
+############# Target Question: 10/10 #############
+Question: what nfl coach has the most wins ever
+
+Output: The contexts provide conflicting information as they mention Bill Belichick, Tom Landry, Vince Lombardi, and George Halas as the coach with the most NFL victories. Therefore, I cannot definitively answer who has 
+the most wins ever.
+
+
+Saving iter results to results/query_results/main/debug.json
+######################## Iter: 10/10 #######################
+############# Target Question: 1/10 #############
+Question: who is the song diamonds and rust about
+
+Output: The song "Diamonds and Rust" is about Joan Baez's past relationship with Bob Dylan.
+
+
+############# Target Question: 2/10 #############
+Question: who played the oldest brother in 7th heaven
+
+Output: The information provided is conflicting as it mentions different actors, Matthew McConaughey, Elijah Wood, Leonardo DiCaprio, and Brad Pitt, as the actor who played the oldest brother in 7th Heaven. Therefore, I 
+cannot provide a definitive answer.
+
+
+############# Target Question: 3/10 #############
+Question: where was the war of the planet of the apes filmed
+
+Output: The War of the Planet of the Apes was filmed in Sydney, Paris, Berlin, and Tokyo.
+
+
+############# Target Question: 4/10 #############
+Question: which term is used to identify having official power to act
+
+Output: The terms used to identify having official power to act are 'Dominance', 'Gravity', and 'Velocity'.
+
+
+############# Target Question: 5/10 #############
+Question: how many death stars are there in star wars
+
+Output: The number of Death Stars in the Star Wars universe varies in different contexts. According to the contexts provided, there are 3, 4, 5, and 6 Death Stars mentioned. However, in the original movies, there are two Death Stars.
+
+
+############# Target Question: 6/10 #############
+Question: when does season 8 of vampire diaries come out
+
+Output: Season 8 of Vampire Diaries was released on October 21, 2016.
+
+
+############# Target Question: 7/10 #############
+Question: when did harry potter and the sorcerers stone take place
+
+Output: Harry Potter and the Sorcerer's Stone took place in the year 1994.
+
+
+############# Target Question: 8/10 #############
+Question: where is the suez canal located on a map
+
+Output: The Suez Canal is located in Egypt.
+
+
+############# Target Question: 9/10 #############
+Question: how much square feet is a basketball court
+
+Output: Basketball courts can vary in size, but official NBA courts typically measure between 5300 and 5600 square feet. Other professional courts can measure up to 6200 square feet.
+
+
+############# Target Question: 10/10 #############
+Question: who sings i can't take my eyes off of you
+
+Output: The song "I Can't Take My Eyes Off of You" is originally sung by Frankie Valli. It has also been covered by artists like Bob Dylan and George Harrison.
+
+
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+ASR Mean: 0.72
+
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+ASR Mean: 0.72
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+Saving iter results to results/query_results/main/debug.json
+Saving iter results to results/query_results/main/debug.json
+Saving iter results to results/query_results/main/debug.json
+Saving iter results to results/query_results/main/debug.json
+Saving iter results to results/query_results/main/debug.json
+ASR: [0.8 0.9 0.7 0.8 0.4 0.7 0.5 0.9 0.8 0.7]
+ASR Mean: 0.72
+
+Ret: [[4, 0, 4, 2, 5, 3, 1, 1, 4, 4], [2, 4, 4, 1, 2, 1, 4, 3, 2, 3], [5, 1, 3, 2, 2, 0, 1, 4, 2, 5], [3, 4, 4, 1, 5, 2, 5, 1, 2, 0], [3, 4, 2, 0, 1, 4, 0, 1, 5, 4], [4, 3, 1, 1, 4, 5, 4, 1, 4, 3], [3, 4, 3, 4, 3, 2, 1, 
+5, 3, 1], [4, 4, 1, 4, 4, 4, 0, 3, 3, 5], [1, 3, 4, 2, 2, 4, 1, 4, 4, 4], [2, 4, 4, 4, 4, 4, 2, 0, 4, 2]]     
+Precision mean: 0.56
+Recall mean: 0.56
+F1 mean: 0.56
+
+Ending...

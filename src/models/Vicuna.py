@@ -47,7 +47,8 @@ class Vicuna(Model):
 
             input_ids = self.tokenizer([prompt]).input_ids
             output_ids = self.model.generate(
-                torch.as_tensor(input_ids).cuda(),
+                # torch.as_tensor(input_ids).cuda(),
+                torch.as_tensor(input_ids),
                 do_sample=True,
                 temperature=self.temperature,
                 repetition_penalty=self.repetition_penalty,

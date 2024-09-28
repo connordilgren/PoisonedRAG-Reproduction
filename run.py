@@ -52,7 +52,7 @@ test_params = {
     'query_results_dir': 'main',
 
     # LLM setting
-    'model_name': 'palm2', 
+    'model_name': 'vicuna', 
     'use_truth': False,
     'top_k': 5,
     'gpu_id': 0,
@@ -68,6 +68,9 @@ test_params = {
     'note': None
 }
 
-for dataset in ['nq', 'hotpotqa', 'msmarco']:
-    test_params['eval_dataset'] = dataset
-    run(test_params)
+# # only looking at nq dataset
+# for dataset in ['nq', 'hotpotqa', 'msmarco']:
+#     test_params['eval_dataset'] = dataset
+#     run(test_params)
+
+run(test_params)

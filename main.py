@@ -25,7 +25,7 @@ def parse_args():
 
     # LLM settings
     parser.add_argument('--model_config_path', default=None, type=str)
-    parser.add_argument('--model_name', type=str, default='palm2')
+    parser.add_argument('--model_name', type=str, default='gpt4')
     parser.add_argument('--top_k', type=int, default=5)
     parser.add_argument('--use_truth', type=str, default='False')
     parser.add_argument('--gpu_id', type=int, default=0)
@@ -46,8 +46,8 @@ def parse_args():
 
 def main():
     args = parse_args()
-    torch.cuda.set_device(args.gpu_id)
-    device = 'cuda'
+    # torch.cuda.set_device(args.gpu_id)  # using cpu
+    device = 'cpu'
     setup_seeds(args.seed)
     if args.model_config_path == None:
         args.model_config_path = f'model_configs/{args.model_name}_config.json'
@@ -59,7 +59,7 @@ def main():
         random.shuffle(incorrect_answers)    
     else:
         corpus, queries, qrels = load_beir_datasets(args.eval_dataset, args.split)
-        incorrect_answers = load_json(f'results/target_queries/{args.eval_dataset}.json')
+        incorrect_answers = load_json(f'results/adv_targeted_results/disorganized_disinformation_nq.json')
 
     # load BEIR top_k results  
     if args.orig_beir_results is None: 
@@ -95,7 +95,7 @@ def main():
                             tokenizer=tokenizer,
                             get_emb=get_emb) 
     
-    llm = create_model(args.model_config_path)
+    llm = create_model(args.model_config_path)  # takes a long time !! > 1 hour, is in cache now?
 
     all_results = []
     asr_list=[]
@@ -104,20 +104,23 @@ def main():
     for iter in range(args.repeat_times):
         print(f'######################## Iter: {iter+1}/{args.repeat_times} #######################')
 
+        # get keys of incorrect_answers, since the indexing isn't integers
+        incorrect_answers_keys = list(incorrect_answers.keys())
+
         target_queries_idx = range(iter * args.M, iter * args.M + args.M)
-        target_queries = [incorrect_answers[idx]['question'] for idx in target_queries_idx]
+        target_queries = [incorrect_answers[incorrect_answers_keys[idx]]['question'] for idx in target_queries_idx]
         
         if args.attack_method not in [None, 'None']:
             for i in target_queries_idx:
-                top1_idx = list(results[incorrect_answers[i]['id']].keys())[0]
-                top1_score = results[incorrect_answers[i]['id']][top1_idx]
-                target_queries[i - iter * args.M] = {'query': target_queries[i - iter * args.M], 'top1_score': top1_score, 'id': incorrect_answers[i]['id']}
+                top1_idx = list(results[incorrect_answers[incorrect_answers_keys[i]]['id']].keys())[0]
+                top1_score = results[incorrect_answers[incorrect_answers_keys[i]]['id']][top1_idx]
+                target_queries[i - iter * args.M] = {'query': target_queries[i - iter * args.M], 'top1_score': top1_score, 'id': incorrect_answers[incorrect_answers_keys[i]]['id']}
                 
             adv_text_groups = attacker.get_attack(target_queries)
             adv_text_list = sum(adv_text_groups, []) # convert 2D array to 1D array
 
             adv_input = tokenizer(adv_text_list, padding=True, truncation=True, return_tensors="pt")
-            adv_input = {key: value.cuda() for key, value in adv_input.items()}
+            # adv_input = {key: value.cuda() for key, value in adv_input.items()}
             with torch.no_grad():
                 adv_embs = get_emb(c_model, adv_input)        
                       
@@ -128,12 +131,12 @@ def main():
         for i in target_queries_idx:
             iter_idx = i - iter * args.M # iter index
             print(f'############# Target Question: {iter_idx+1}/{args.M} #############')
-            question = incorrect_answers[i]['question']
+            question = incorrect_answers[incorrect_answers_keys[i]]['question']
             print(f'Question: {question}\n') 
             
-            gt_ids = list(qrels[incorrect_answers[i]['id']].keys())
+            gt_ids = list(qrels[incorrect_answers[incorrect_answers_keys[i]]['id']].keys())
             ground_truth = [corpus[id]["text"] for id in gt_ids]
-            incco_ans = incorrect_answers[i]['incorrect answer']            
+            incco_ans = incorrect_answers[incorrect_answers_keys[i]]['incorrect answer']            
 
             if args.use_truth == 'True':
                 query_prompt = wrap_prompt(question, ground_truth, 4)
@@ -148,12 +151,12 @@ def main():
                 )  
 
             else: # topk
-                topk_idx = list(results[incorrect_answers[i]['id']].keys())[:args.top_k]
-                topk_results = [{'score': results[incorrect_answers[i]['id']][idx], 'context': corpus[idx]['text']} for idx in topk_idx]               
+                topk_idx = list(results[incorrect_answers[incorrect_answers_keys[i]]['id']].keys())[:args.top_k]
+                topk_results = [{'score': results[incorrect_answers[incorrect_answers_keys[i]]['id']][idx], 'context': corpus[idx]['text']} for idx in topk_idx]               
 
                 if args.attack_method not in [None, 'None']: 
                     query_input = tokenizer(question, padding=True, truncation=True, return_tensors="pt")
-                    query_input = {key: value.cuda() for key, value in query_input.items()}
+                    # query_input = {key: value.cuda() for key, value in query_input.items()}
                     with torch.no_grad():
                         query_emb = get_emb(model, query_input) 
                     for j in range(len(adv_text_list)):
@@ -181,17 +184,18 @@ def main():
                 injected_adv=[i for i in topk_contents if i in adv_text_set]
                 iter_results.append(
                     {
-                        "id":incorrect_answers[i]['id'],
+                        "id":incorrect_answers[incorrect_answers_keys[i]]['id'],
                         "question": question,
                         "injected_adv": injected_adv,
                         "input_prompt": query_prompt,
                         "output_poison": response,
                         "incorrect_answer": incco_ans,
-                        "answer": incorrect_answers[i]['correct answer']
+                        "answer": incorrect_answers[incorrect_answers_keys[i]]['correct answer']
                     }
                 )
 
-                if clean_str(incco_ans) in clean_str(response):
+                # this where (incorrect answer) string compare occurs
+                if len([i for i in incco_ans if clean_str(i) in clean_str(response)]) > 0:
                     asr_cnt += 1  
 
         asr_list.append(asr_cnt)
@@ -205,8 +209,8 @@ def main():
     asr = np.array(asr_list) / args.M
     asr_mean = round(np.mean(asr), 2)
     ret_precision_array = np.array(ret_list) / args.top_k
-    ret_precision_mean=round(np.mean(ret_precision_array), 2)
-    ret_recall_array = np.array(ret_list) / args.adv_per_query
+    ret_precision_mean=round(np.mean(ret_precision_array), 2)  # average fraction of adversarial texts in top_k per top_k texts
+    ret_recall_array = np.array(ret_list) / args.adv_per_query  # average fraction of adversarial texts in top_k generated for query
     ret_recall_mean=round(np.mean(ret_recall_array), 2)
 
     ret_f1_array=f1_score(ret_precision_array, ret_recall_array)
